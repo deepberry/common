@@ -1,0 +1,7 @@
+{
+    "__server" : "https://admin.deepberry.cn",
+
+    "__ports" : {
+        "cms" : 62868
+    }
+}

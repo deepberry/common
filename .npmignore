@@ -1,1 +1,5 @@
 docs/img
+
+# node
+node_modules
+package-lock.json
