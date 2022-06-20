@@ -1,5 +1,14 @@
 {
-  "dependencies": {
-    "element-plus": "^2.2.6"
-  }
+    "name": "@deepberry/common",
+    "version": "0.1.0",
+    "main": "data/common.json",
+    "repository": "git://github.com/deepberry/common.git",
+    "homepage": "https://github.com/deepberry/common",
+    "bugs": {
+        "url": "https://github.com/deepberry/common/issues"
+    },
+    "author": "iRuxu <rx6@qq.com> (https://iRuxu.com)",
+    "dependencies": {
+        "element-plus": "^2.2.6"
+    }
 }
