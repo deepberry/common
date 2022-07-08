@@ -1,17 +1,17 @@
 /*
  * @Author: iRuxu
  * @Date: 2022-06-16 18:32:38
- * @LastEditTime: 2022-06-20 15:40:10
+ * @LastEditTime: 2022-07-08 17:14:06
  * @Description: 通用请求器
  */
 
 import { installInterceptors, installStandardInterceptors } from "./interceptors.js";
-import { __server,__ports } from "../data/common.json";
+import { __cms } from "../data/common.json";
 import axios from "axios";
 
 // cms通用请求接口
 function $cms(options) {
-    let domain = (options && options.domain) || (__server + __ports.cms);
+    let domain = (options && options.domain) || __cms;
     let config = {
         // 同时发送cookie和basic auth
         withCredentials: true,

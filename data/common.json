@@ -1,7 +1,9 @@
 {
-    "__server" : "https://admin.deepberry.cn",
+    "__root":"https://www.deepberry.cn",
+    "__cdn" : "https://cdn.deepberry.cn",
 
-    "__ports" : {
-        "cms" : 62868
-    }
+    "__admin" : "https://admin.deepberry.cn",
+
+    "__cms" : "https://admin.deepberry.cn",
+    "__titan" : "https://io.deepberry.cn"
 }
