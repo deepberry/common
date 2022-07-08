@@ -1,9 +1,11 @@
 {
     "__root":"https://www.deepberry.cn",
-    "__cdn" : "https://cdn.deepberry.cn",
-
     "__admin" : "https://admin.deepberry.cn",
+    "__titan" : "https://io.deepberry.cn",
 
-    "__cms" : "https://admin.deepberry.cn",
-    "__titan" : "https://io.deepberry.cn"
+    "__cdn" : "https://cdn.deepberry.cn/",
+    "__img" : "https://img.deepberry.cn/",
+    
+    "__cms" : "https://cms.deepberry.cn/"
+    
 }
