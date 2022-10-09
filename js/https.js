@@ -15,13 +15,20 @@ function $cms(options) {
     let config = {
         // 同时发送cookie和basic auth
         withCredentials: true,
-        auth: options.auth || {
-            username: (localStorage && localStorage.getItem("token")) || "",
-            password: "cms common request",
-        },
         baseURL: process.env.NODE_ENV === "production" ? domain : "/",
         headers: options.headers || {},
     };
+
+    if (options.auth) {
+        config.auth = options.auth;
+    }
+
+    if (!options.headers.Authorization) {
+        config.auth = {
+            username: (localStorage && localStorage.getItem("token")) || "",
+            password: "cms common request",
+        };
+    }
 
     // 创建实例
     const ins = axios.create(config);
