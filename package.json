@@ -1,6 +1,6 @@
 {
     "name": "@deepberry/common",
-    "version": "0.1.7",
+    "version": "0.1.9",
     "main": "data/common.json",
     "repository": "git://github.com/deepberry/common.git",
     "homepage": "https://github.com/deepberry/common",
@@ -9,7 +9,6 @@
     },
     "author": "iRuxu <rx6@qq.com> (https://iRuxu.com)",
     "dependencies": {
-        "axios": "^0.27.2",
-        "element-plus": "^2.2.6"
+        "axios": "^0.27.2"
     }
 }

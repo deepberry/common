@@ -15,12 +15,12 @@ function $cms(options) {
     let config = {
         // 同时发送cookie和basic auth
         withCredentials: true,
-        auth: {
+        auth: options.auth || {
             username: (localStorage && localStorage.getItem("token")) || "",
             password: "cms common request",
         },
         baseURL: process.env.NODE_ENV === "production" ? domain : "/",
-        headers: {},
+        headers: options.headers || {},
     };
 
     // 创建实例
