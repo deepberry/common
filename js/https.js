@@ -16,17 +16,17 @@ function $cms(options) {
         // 同时发送cookie和basic auth
         withCredentials: true,
         baseURL: process.env.NODE_ENV === "production" ? domain : "/",
-        headers: options.headers || {},
+        headers: options?.headers || {},
     };
 
-    if (options.auth) {
-        config.auth = options.auth;
+    if (options?.auth) {
+        config.auth = options?.auth;
     }
 
-    if (!options.headers.Authorization) {
+    if (!options?.headers.Authorization) {
         config.auth = {
-            username: (localStorage && localStorage.getItem("token")) || "",
-            password: "cms common request",
+            username: "cms common request",
+            password: (localStorage && localStorage.getItem("token")) || "",
         };
     }
 
