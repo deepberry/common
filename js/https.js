@@ -47,7 +47,7 @@ function $titan2(options) {
         baseURL: process.env.NODE_ENV === "production" ? domain : "/",
         withCredentials: false,
         headers: {
-            Authorization: "Bearer " + User.getToken({ version: 2 }),
+            Authorization: "Bearer " + localStorage.getItem("TOKEN_TITAN_V2"),
         },
     }
 
