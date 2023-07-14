@@ -39,4 +39,23 @@ function $cms(options) {
     return ins;
 }
 
-export { $cms };
+// titan2通用请求接口
+function $titan2(options) {
+    let domain = (options && options.domain) || Common.__titan2;
+
+    let config = {
+        baseURL: process.env.NODE_ENV === "production" ? domain : "/",
+        withCredentials: false,
+        headers: {
+            Authorization: "Bearer " + User.getToken({ version: 2 }),
+        },
+    }
+
+    const ins = axios.create(config);
+
+    installInterceptors(ins, options);
+
+    return ins;
+}
+
+export { $cms, $titan2 };

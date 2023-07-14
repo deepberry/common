@@ -6,6 +6,6 @@
     "__cdn" : "https://cdn.deepberry.cn/",
     "__img" : "https://img.deepberry.cn/",
     
-    "__cms" : "https://cms.deepberry.cn/"
-    
+    "__cms" : "https://cms.deepberry.cn/",
+    "__titan2": "https://api.deepberry.cn/"
 }
