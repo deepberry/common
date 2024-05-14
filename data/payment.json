@@ -1,0 +1,38 @@
+{
+    "order_status" :{
+        "0": "待支付",
+        "1": "已支付",
+        "2": "已确认",
+        "3": "已发货",
+        "4": "已完成",
+        "-1": "已取消",
+        "-2": "退款中",
+        "-3": "已退款"
+    },
+    "pay_status": {
+        "0": "未支付",
+        "1": "已支付",
+        "2": "支付成功",
+        "-1": "支付失败",
+        "-2": "退款中",
+        "-3": "已退款"
+    },
+    "order_status_en": {
+        "0": "Pending",
+        "1": "Paid",
+        "2": "Confirmed",
+        "3": "Shipped",
+        "4": "Completed",
+        "-1": "Cancelled",
+        "-2": "Refunding",
+        "-3": "Refunded"
+    },
+    "pay_status_en": {
+        "0": "Unpaid",
+        "1": "Processing",
+        "2": "Succeeded",
+        "-1": "Failed",
+        "-2": "Refunding",
+        "-3": "Refunded"
+    }
+}
