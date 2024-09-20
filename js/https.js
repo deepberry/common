@@ -15,7 +15,7 @@ function $cms(options) {
     let config = {
         // 同时发送cookie和basic auth
         withCredentials: true,
-        baseURL: process.env.NODE_ENV === "production" ? domain : "/",
+        baseURL: domain,
         headers: options?.headers || {},
     };
 
@@ -44,7 +44,7 @@ function $titan2(options) {
     let domain = (options && options.domain) || Common.__titan2;
 
     let config = {
-        baseURL: process.env.NODE_ENV === "production" ? domain : "/",
+        baseURL: domain,
         withCredentials: false,
         headers: {
             Authorization: "Bearer " + localStorage.getItem("TOKEN_TITAN_V2"),
