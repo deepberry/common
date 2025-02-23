@@ -1,0 +1,12 @@
+{
+  "typeMap": {
+    "io": "一般硬件设备",
+    "scale": "智能电子秤",
+    "titan": "Titan操作平台",
+    "miniprogram": "小程序",
+    "wxmp": "公众号",
+    "www": "官网与商城",
+    "admin": "后台系统",
+    "other": "其它"
+  }
+}
