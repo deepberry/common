@@ -1,0 +1,59 @@
+{
+    "devices": [
+        {
+            "id": 1,
+            "name": "传感器",
+            "key": "sensor"
+        },
+        {
+            "id": 2,
+            "name": "控制器",
+            "key": "controller"
+        },
+        {
+            "id": 3,
+            "name": "水肥机",
+            "key": "fertilizer"
+        },
+        {
+            "id": 4,
+            "name": "排灌秤",
+            "key": "irrigation"
+        },
+        {
+            "id": 6,
+            "name": "电子秤",
+            "key": "es"
+        },
+        {
+            "id": 7,
+            "name": "摄像头",
+            "key": "camera"
+        },
+        {
+            "id": 5,
+            "name": "其他",
+            "key": "other"
+        },
+        {
+            "id": 8,
+            "name": "进液收集装置",
+            "key": "liquid"
+        },
+        {
+            "id": 9,
+            "name": "排液收集装置",
+            "key": "drainage"
+        },
+        {
+            "id": 10,
+            "name": "进排液收集装置",
+            "key": "liquid_drainage"
+        },
+        {
+            "id": 11,
+            "name": "水肥控制模块",
+            "key": "fertilizer_controller"
+        }
+    ]
+}
