@@ -1,0 +1,44 @@
+[
+    {
+        "path": "/overview",
+        "name": "overview",
+        "icon": "overview",
+        "zh-cn": "总览",
+        "en-us": "Overview"
+    },
+    {
+        "path": "/greenhouse",
+        "name": "greenhouse",
+        "icon": "greenhouse",
+        "zh-cn": "园区管理",
+        "en-us": "Dashboard"
+    },
+    {
+        "path": "/monitor",
+        "name": "monitor",
+        "icon": "monitor",
+        "zh-cn": "监控大盘",
+        "en-us": "Monitor"
+    },
+    {
+        "path": "/aigrow",
+        "name": "aigrow",
+        "icon": "aigrow",
+        "zh-cn": "AI Grow",
+        "en-us": "AI Grow"
+    },
+    {
+        "path": "fertilizer",
+        "name": "fertilizer",
+        "icon": "beaker",
+        "zh-cn": "施肥",
+        "en-us": "Fertilizer"
+    },
+    {
+        "path": "/insights",
+        "name": "insights",
+        "icon": "conf",
+        "zh-cn": "开发配置",
+        "en-us": "Configuation"
+    }
+]
