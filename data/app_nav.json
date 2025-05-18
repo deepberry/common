@@ -9,21 +9,21 @@
     {
         "path": "/greenhouse",
         "name": "greenhouse",
-        "icon": "greenhouse",
+        "icon": "aigrow2",
         "zh-cn": "园区管理",
         "en-us": "Dashboard"
     },
     {
         "path": "/monitor",
         "name": "monitor",
-        "icon": "monitor",
+        "icon": "basic",
         "zh-cn": "监控大盘",
         "en-us": "Monitor"
     },
     {
         "path": "/aigrow",
         "name": "aigrow",
-        "icon": "aigrow",
+        "icon": "ai",
         "zh-cn": "AI Grow",
         "en-us": "AI Grow"
     },
