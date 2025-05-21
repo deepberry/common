@@ -28,10 +28,10 @@
         "en-us": "AI Grow"
     },
     {
-        "path": "fertilizer",
+        "path": "/fertilizer",
         "name": "fertilizer",
         "icon": "beaker",
-        "zh-cn": "施肥",
+        "zh-cn": "配肥工单",
         "en-us": "Fertilizer"
     },
     {
@@ -39,6 +39,6 @@
         "name": "insights",
         "icon": "conf",
         "zh-cn": "开发配置",
-        "en-us": "Configuation"
+        "en-us": "Configuration"
     }
 ]
