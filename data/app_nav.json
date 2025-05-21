@@ -7,7 +7,7 @@
         "en-us": "Overview"
     },
     {
-        "path": "/greenhouse",
+        "path": "/greenhouse/index",
         "name": "greenhouse",
         "icon": "aigrow2",
         "zh-cn": "园区管理",
