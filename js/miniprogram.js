@@ -7,6 +7,58 @@ export function isMiniProgram() {
   return navigator.userAgent.toLowerCase().includes("miniprogram");
 }
 
+export function miniprogramHack() {
+  document.addEventListener("DOMContentLoaded", function () {
+    // 检查 html 标签是否有 wechat-miniprogram 类
+    if (document.documentElement.classList.contains("wechat-miniprogram")) {
+      // 为整个 document 添加一个点击事件监听器
+      document.addEventListener("click", function (event) {
+        // 检查被点击的元素是否是一个链接
+        if (event.target.tagName === "A") {
+          var href = event.target.getAttribute("href");
+
+          // 检查是否是相对链接
+          var isRelative =
+            !href.startsWith("http://") &&
+            !href.startsWith("https://") &&
+            !href.startsWith("//");
+
+          // 检查是否是deepberry域名
+          var isDBDomain = /deepberry\.cn/.test(href);
+
+          // 如果不是相对链接且不是deepberry域名
+          if (!isRelative && !isDBDomain) {
+            // 阻止默认行为
+            event.preventDefault();
+          }
+        }
+      });
+    }
+  });
+}
+
+// 从url中获取参数
+export function getUrlParam(name) {
+  var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+  var r = window.location.search.substr(1).match(reg);
+  return r ? decodeURIComponent(r[2]) : null;
+}
+
+export function getTokenFromUrl() {
+  const token = sessionStorage.getItem("__token");
+
+  if (token) {
+    return token;
+  }
+
+  const __token = getUrlParam("__token");
+
+  if (__token) {
+    sessionStorage.setItem("__token", __token);
+    return __token;
+  }
+}
+
 export function serializeParams(params) {
   return Object.keys(params)
     .map(
