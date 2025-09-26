@@ -18,7 +18,7 @@
     "other": "Other"
   },
   "subtype_map": {
-    "malfunction_repair​": "故障报修",
+    "malfunction_repair": "故障报修",
     "bug": "Bug异常",
     "suggestion": "建议意见",
     "product_issues": "商品问题",
@@ -26,7 +26,7 @@
     "other": "其他"
   },
   "subtype_map_en": {
-    "malfunction_repair​": "Malfunction Repair",
+    "malfunction_repair": "Malfunction Repair",
     "bug": "Bugs",
     "suggestion": "Suggestions",
     "product_issues": "Product Issues",
