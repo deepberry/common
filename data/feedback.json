@@ -1,22 +1,36 @@
 {
-  "typeMap": {
-    "io": "硬件设备",
-    "software": "软件平台",
-    "mall": "商城服务",
-    "other": "其他"
-  },
-  "feedbackTypeMap": {
+  "feedback_types": {
     "io": ["malfunction_repair"],
     "software": ["bug", "suggestion"],
     "mall": ["product_issues", "invoice_issues", "other"],
     "other": ["other"]
   },
-  "feedbackSubtypeMap": {
+  "type_map": {
+    "io": "硬件设备",
+    "software": "软件平台",
+    "mall": "商城服务",
+    "other": "其他"
+  },
+  "type_map_en": {
+    "io": "Hardware Devices",
+    "software": "Software Platform",
+    "mall": "Mall Orders",
+    "other": "Other"
+  },
+  "subtype_map": {
     "malfunction_repair​": "故障报修",
     "bug": "Bug异常",
     "suggestion": "建议意见",
     "product_issues": "商品问题",
     "invoice_issues": "发票问题",
     "other": "其他"
+  },
+  "subtype_map_en": {
+    "malfunction_repair​": "Malfunction Repair",
+    "bug": "Bugs",
+    "suggestion": "Suggestions",
+    "product_issues": "Product Issues",
+    "invoice_issues": "Invoice Issues",
+    "other": "Other"
   }
 }
