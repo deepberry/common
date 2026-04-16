@@ -1,8 +1,11 @@
 {
     "name": "@deepberry/common",
-    "version": "0.3.9",
+    "version": "0.3.10",
     "main": "data/common.json",
-    "repository": "git://github.com/deepberry/common.git",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/deepberry/common.git"
+    },
     "homepage": "https://github.com/deepberry/common",
     "bugs": {
         "url": "https://github.com/deepberry/common/issues"
