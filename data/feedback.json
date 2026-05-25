@@ -3,32 +3,43 @@
     "io": ["malfunction_repair"],
     "software": ["bug", "suggestion"],
     "mall": ["product_issues", "invoice_issues", "other"],
+    "bee_user": ["bug", "suggestion", "business_issue", "other"],
+    "bee_team": ["bug", "suggestion", "business_issue", "other"],
+    "bee_garden": ["bug", "suggestion", "business_issue", "other"],
     "other": ["other"]
   },
   "type_map": {
     "io": "硬件设备",
     "software": "软件平台",
     "mall": "商城服务",
+    "bee_user": "小蜜蜂用户端",
+    "bee_team": "小蜜蜂车队端",
+    "bee_garden": "小蜜蜂园区端",
     "other": "其他"
   },
   "type_map_en": {
     "io": "Hardware Devices",
     "software": "Software Platform",
     "mall": "Mall Orders",
+    "bee_user": "Bee User App",
+    "bee_team": "Bee Team App",
+    "bee_garden": "Bee Garden App",
     "other": "Other"
   },
   "subtype_map": {
     "malfunction_repair": "故障报修",
-    "bug": "Bug异常",
-    "suggestion": "建议意见",
+    "bug": "程序异常",
+    "suggestion": "功能建议",
+    "business_issue": "业务问题",
     "product_issues": "商品问题",
     "invoice_issues": "发票问题",
     "other": "其他"
   },
   "subtype_map_en": {
     "malfunction_repair": "Malfunction Repair",
-    "bug": "Bugs",
-    "suggestion": "Suggestions",
+    "bug": "Program Exception",
+    "suggestion": "Feature Suggestion",
+    "business_issue": "Business Issue",
     "product_issues": "Product Issues",
     "invoice_issues": "Invoice Issues",
     "other": "Other"
