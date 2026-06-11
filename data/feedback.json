@@ -2,6 +2,7 @@
   "feedback_types": {
     "io": ["malfunction_repair"],
     "software": ["bug", "suggestion"],
+    "titan_app": ["bug", "suggestion"],
     "mall": ["product_issues", "invoice_issues", "other"],
     "bee_user": ["bug", "suggestion", "business_issue", "other"],
     "bee_team": ["bug", "suggestion", "business_issue", "other"],
@@ -11,6 +12,7 @@
   "type_map": {
     "io": "硬件设备",
     "software": "软件平台",
+    "titan_app": "泰坦应用",
     "mall": "商城服务",
     "bee_user": "小蜜蜂用户端",
     "bee_team": "小蜜蜂车队端",
@@ -20,6 +22,7 @@
   "type_map_en": {
     "io": "Hardware Devices",
     "software": "Software Platform",
+    "titan_app": "Titan App",
     "mall": "Mall Orders",
     "bee_user": "Bee User App",
     "bee_team": "Bee Team App",

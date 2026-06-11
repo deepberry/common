@@ -1,6 +1,6 @@
 {
     "name": "@deepberry/common",
-    "version": "0.3.11",
+    "version": "0.3.12",
     "main": "data/common.json",
     "repository": {
         "type": "git",
