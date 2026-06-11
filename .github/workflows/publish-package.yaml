@@ -18,7 +18,16 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           scope: '@deepberry'
       # - run: npm ci
-      - run: npm publish
+      - name: Publish to GitHub Packages
+        run: |
+          PACKAGE_NAME=$(node -p "require('./package.json').name")
+          PACKAGE_VERSION=$(node -p "require('./package.json').version")
+
+          if npm view "${PACKAGE_NAME}@${PACKAGE_VERSION}" version --registry=https://npm.pkg.github.com/ >/dev/null 2>&1; then
+            echo "${PACKAGE_NAME}@${PACKAGE_VERSION} already exists on GitHub Packages, skipping publish."
+          else
+            npm publish
+          fi
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -36,4 +45,13 @@ jobs:
           node-version: 24
           registry-url: https://registry.npmjs.org/
       # - run: npm ci
-      - run: npm publish --provenance --access public
+      - name: Publish to npm
+        run: |
+          PACKAGE_NAME=$(node -p "require('./package.json').name")
+          PACKAGE_VERSION=$(node -p "require('./package.json').version")
+
+          if npm view "${PACKAGE_NAME}@${PACKAGE_VERSION}" version --registry=https://registry.npmjs.org/ >/dev/null 2>&1; then
+            echo "${PACKAGE_NAME}@${PACKAGE_VERSION} already exists on npm, skipping publish."
+          else
+            npm publish --provenance --access public
+          fi
