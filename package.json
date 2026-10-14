@@ -1,6 +1,6 @@
 {
     "name": "@deepberry/common",
-    "version": "0.3.15",
+    "version": "0.3.16",
     "scripts": {
         "test": "node --test tests/*.test.mjs"
     },
