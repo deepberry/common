@@ -1,6 +1,9 @@
 {
     "name": "@deepberry/common",
-    "version": "0.3.14",
+    "version": "0.3.15",
+    "scripts": {
+        "test": "node --test tests/*.test.mjs"
+    },
     "main": "data/common.json",
     "repository": {
         "type": "git",

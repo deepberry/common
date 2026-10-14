@@ -1,5 +1,7 @@
 # 统一请求封装
 
+此页描述旧 `js/https.js` 接口。新项目及迁移项目使用 [服务请求器](./api.md)，统一从 `@deepberry/common/js/api` 导入。
+
 ## $cms
 请求cms接口
 
